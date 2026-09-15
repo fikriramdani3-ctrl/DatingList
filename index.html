@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dating List Fikri & Ellisa 💕</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💕 Dating List 💕</h1>
+      <h3>Fikri & Ellisa</h3>
+
+        <!-- Input -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="dateInput"
+                >
+
+            <button id="addButton">
+                +
+            </button>
+
+        </div>
+
+
+        <!-- Filter -->
+        <div class="filter">
+
+            <button
+                class="active"
+                onclick="filterDates('all', this)"
+            >
+                Semua
+            </button>
+
+            <button
+                onclick="filterDates('completed', this)"
+            >
+                Selesai
+            </button>
+
+            <button
+                onclick="filterDates('pending', this)"
+            >
+                Belum Selesai
+            </button>
+
+        </div>
+
+
+        <!-- List -->
+        <ul id="dateList"></ul>
+
+    </div>
+
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
